@@ -1,3 +1,73 @@
+/*전체 레이아웃 크기 조절 */
+body{
+    margin:0;
+}
+.view_main_container{
+    display: flex;
+    width:100%;
+    height:100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form_container{
+    padding:2em;
+}
+
+/* 전체 글자 색 지정 */
+* {
+    color:#fff;
+}
+/* 로그인 입력창 숨기기 */
 .hidden {
     display: none;
+}
+
+/* 아이디 입력창, Todd 리스트창 수정 */
+#input_usernameForm, #input_todoForm{
+    width:20em;
+    border:none;
+    border-bottom: white;
+    border-bottom-style: solid;
+    background-color: rgba(0, 0, 0, 0);
+}
+/* placeholder 색 변경 */
+::placeholder{
+    color:#fff;
+    font-size: large;
+}
+
+/* 배경이미지 설정 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+img {
+    image-rendering:-webkit-optimize-contrast;
+    transform:translateZ(0);
+    backface-visibility:hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}  
+
+/* 시계 */
+.clock {
+    font-family: clock-digita;
+    color: #fff;
+    font-weight: 700;
+    font-size: 130px;
+}
+
+/* 명언 */
+#quote {
+    padding-top: 5px;
 }
